@@ -8,26 +8,26 @@ All colors MUST be HSL for consistency and theming.
 
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    /* Core Brand Colors - Light Professional Theme */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
     /* Card System */
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
 
-    --popover: 240 5% 7%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* Primary Brand - Joynt Purple */
-    --primary: 258 90% 66%;
+    /* Primary Brand - Professional Blue */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 258 100% 75%;
-    --primary-dark: 258 70% 45%;
+    --primary-glow: 217 100% 70%;
+    --primary-dark: 217 80% 45%;
 
-    /* Secondary - Trust Blue */
-    --secondary: 217 91% 60%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Elegant Gray */
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 3.9%;
 
     /* Success/Savings Green */
     --success: 142 76% 36%;
@@ -35,12 +35,12 @@ All colors MUST be HSL for consistency and theming.
     --success-glow: 142 70% 45%;
 
     /* Muted Colors */
-    --muted: 240 4% 16%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 240 4% 96%;
+    --muted-foreground: 240 3.8% 46.1%;
 
     /* Accent Colors */
-    --accent: 240 4% 16%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 240 4% 96%;
+    --accent-foreground: 240 5.9% 10%;
 
     /* Warning/Gold */
     --warning: 47 96% 53%;
@@ -51,9 +51,9 @@ All colors MUST be HSL for consistency and theming.
     --destructive-foreground: 0 0% 98%;
 
     /* Borders and Inputs */
-    --border: 240 4% 16%;
-    --input: 240 4% 16%;
-    --ring: 258 90% 66%;
+    --border: 240 5% 91%;
+    --input: 240 5% 96%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
