@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Image from "next/image";
 import { 
   Users, 
   Clock, 
@@ -102,9 +103,11 @@ const GroupShowcase = () => {
             >
               {/* Product Image */}
               <div className="relative overflow-hidden">
-                <img 
+                <Image 
                   src={group.image} 
                   alt={group.title}
+                  width={400}
+                  height={300}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4 flex gap-2">

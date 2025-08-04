@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { 
   Shield, 
   Lock, 
@@ -112,9 +113,11 @@ const TrustSection = () => {
           {/* Trust Image & Certifications */}
           <div className="space-y-8">
             <div className="relative">
-              <img 
+              <Image 
                 src={trustImage} 
                 alt="Security and Trust" 
+                width={600}
+                height={400}
                 className="w-full rounded-2xl shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent rounded-2xl" />

@@ -4,6 +4,53 @@
 
 **URL**: https://lovable.dev/projects/5d086ea8-7f7a-4cfa-aaf5-d4171579cceb
 
+## Google API Integration
+
+This project now includes comprehensive Google API integration designed for use with Google for Education (Students Pro) accounts. 
+
+### 🎓 Students Pro Benefits
+- **$300 in Google Cloud credits** (12 months)
+- Access to premium Google APIs
+- Free tier allowances for most services
+- Educational support and resources
+
+### 🚀 Available Integrations
+- **Google Maps** - Location services and delivery zones
+- **Google Translate** - Multi-language support for global reach
+- **Google AI (Gemini)** - AI-powered content generation
+- **Google Analytics** - User behavior and conversion tracking
+- **Google Cloud Vision** - Image analysis and processing
+
+### 📖 Quick Start
+
+1. **Set up your Google Cloud project** using your student account
+2. **Enable required APIs** in Google Cloud Console
+3. **Configure environment variables** (see `.env.example`)
+4. **Visit `/google-api-demo`** to test the integration
+5. **Read the full guide** at `docs/GOOGLE_API_SETUP.md`
+
+### 🔧 Configuration
+
+Copy `.env.example` to `.env.local` and add your API keys:
+
+```env
+# Google APIs (get these from Google Cloud Console)
+GOOGLE_API_KEY=your_google_api_key
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+GOOGLE_ANALYTICS_ID=your_google_analytics_id
+GOOGLE_AI_API_KEY=your_google_ai_api_key
+```
+
+### 🌐 Using with External AI Applications
+
+Your Google API keys can be used in other AI applications like "trae":
+
+1. **Get your Gemini API key** from Google Cloud Console
+2. **Use the endpoint**: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent`
+3. **Follow the authentication format** in the documentation
+
+See `docs/GOOGLE_API_SETUP.md` for detailed instructions.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
@@ -54,11 +101,15 @@ npm run dev
 
 This project is built with:
 
-- Vite
+- Next.js
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
+- Google APIs Integration
+- Clerk Authentication
+- Stripe Payments
+- Pusher Real-time
 
 ## How can I deploy this project?
 
