@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import { Toaster } from 'sonner'
 import { QueryProvider } from '@/components/providers/query-provider'
 import { CustomCursor } from '@/components/ui/custom-cursor'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+// Use a fallback font configuration to avoid network issues
+const fontConfig = {
+  className: 'font-sans'
+}
 
 export const metadata: Metadata = {
   title: 'Joynt - Premium Group Buying Platform',
@@ -59,7 +61,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={inter.className}>
+        <body className={fontConfig.className}>
           <QueryProvider>
             <CustomCursor />
             {children}
